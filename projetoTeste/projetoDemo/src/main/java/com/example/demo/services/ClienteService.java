@@ -17,7 +17,7 @@ import com.example.demo.domain.Cliente;
 import com.example.demo.dtos.ClienteDTO;
 import com.example.demo.repositories.PessoaRepository;
 import com.example.demo.repositories.ClienteRepository;
-
+import com.example.demo.services.exceptions.ObjectNotFoundException;
 
 public class ClienteService {
 
