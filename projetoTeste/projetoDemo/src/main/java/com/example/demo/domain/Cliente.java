@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
-//import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-public class Cliente implements Serializable {
+
+public class Cliente implements Serializable  {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -22,7 +22,7 @@ public class Cliente implements Serializable {
 	
 	private String telefone;
 
-	@OneToMany(mappedBy = "tecnico")
+	@OneToMany(mappedBy = "cliente")
 	private List<OrdemServico> osList = new ArrayList<>();
 
 	public Cliente() {

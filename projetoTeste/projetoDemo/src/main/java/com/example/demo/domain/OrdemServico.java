@@ -14,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.example.demo.domain.enuns.Prioridade;
 import com.example.demo.domain.enuns.Status;
+
 @Entity
 public class OrdemServico implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -35,7 +36,7 @@ public class OrdemServico implements Serializable {
 	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "tecnico_id")
-	private prestador_de_servico tecnico;
+	private PrestadorDeServico tecnico;
 
 	@JsonIgnore
 	@ManyToOne
@@ -49,7 +50,7 @@ public class OrdemServico implements Serializable {
 		this.dataAbertura = LocalDateTime.now();
 	}
 
-	public OrdemServico(Integer id, String observacoes, prestador_de_servico tecnico, Cliente cliente) {
+	public OrdemServico(Integer id, String observacoes, PrestadorDeServico tecnico, Cliente cliente) {
 		super();
 		this.id = id;
 		this.observacoes = observacoes;
@@ -109,11 +110,11 @@ public class OrdemServico implements Serializable {
 		this.status = status.getCodigo();
 	}
 
-	public prestador_de_servico getTecnico() {
+	public PrestadorDeServico getTecnico() {
 		return tecnico;
 	}
 
-	public void setTecnico(prestador_de_servico tecnico) {
+	public void setTecnico(PrestadorDeServico tecnico) {
 		this.tecnico = tecnico;
 	}
 

@@ -8,15 +8,15 @@ import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 
-import com.example.demo.domain.Pessoa;
-import com.example.demo.domain.Cliente;
+//import com.example.demo.domain.Pessoa;
 import com.example.demo.dtos.ClienteDTO;
-import com.example.demo.repositories.PessoaRepository;
-import com.example.demo.repositories.ClienteRepository;
+import com.example.demo.domain.Cliente;
+//import com.example.demo.repositories.PessoaRepository;
+//import com.example.demo.repositories.ClienteRepository;
 import com.example.demo.services.exceptions.ObjectNotFoundException;
 
 public class ClienteService {
@@ -87,7 +87,7 @@ public class ClienteService {
         LOG.info("Service - DELETANDO CLIENTE");
         Cliente obj = findById(id);
 
-        if (obj.getList().size() > 0) {
+        if (obj.getOsList().size() > 0) {
             throw new DataIntegratyViolationException("Pessoa possui Ordens de Serviço, não pode ser deletado!");
         }
 
@@ -97,8 +97,8 @@ public class ClienteService {
     /*
      * Busca Cliente pelo CPF
      */
-    private Pessoa findByCPF(ClienteDTO objDTO) {
-        Pessoa obj = pessoaRepository.findByCPF(objDTO.getCpf());
+    private Cliente findByCPF(ClienteDTO objDTO) {
+        Cliente obj = pessoaRepository.findByCPF(objDTO.getCpf());
 
         if (obj != null) {
             return obj;

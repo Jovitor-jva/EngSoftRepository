@@ -3,6 +3,7 @@ package com.example.demo.domain.enuns;
 public enum Perfil {
 
 	ADMIN(1, "ROLE_ADMIN"), PADRAO(2, "ROLE_PADRAO");
+	
 
 	private Integer codigo;
 	private String descricao;

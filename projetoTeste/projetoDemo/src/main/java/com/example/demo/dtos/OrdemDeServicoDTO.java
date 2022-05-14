@@ -1,4 +1,4 @@
-package com.example.demo.domain.dtos;
+package com.example.demo.dtos;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 

@@ -1,4 +1,4 @@
-package com.example.demo.domain.dtos;
+package com.example.demo.dtos;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,10 +11,10 @@ import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.br.CPF;
 import com.example.demo.domain.OrdemServico;
-import com.example.demo.domain.prestador_de_servico;
+import com.example.demo.domain.PrestadorDeServico;
 import com.example.demo.domain.enuns.Perfil;
 
-public class TecnicoDTO implements Serializable {
+public class PrestadorDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
@@ -29,11 +29,11 @@ public class TecnicoDTO implements Serializable {
 	private Set<Integer> perfis = new HashSet<>();
 	private List<OrdemServico> osList = new ArrayList<>();
 
-	public TecnicoDTO() {
+	public PrestadorDTO() {
 		super();
 	}
 
-	public TecnicoDTO(prestador_de_servico obj) {
+	public PrestadorDTO(PrestadorDeServico obj) {
 		super();
 		this.id = obj.getId();
 		this.nome = obj.getNome();
