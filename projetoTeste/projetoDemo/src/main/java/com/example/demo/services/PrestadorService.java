@@ -12,23 +12,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.PrestadorDeServico;
-import com.example.demo.domain.Prestador_de_servico;
 import com.example.demo.domain.enuns.Perfil;
 import com.example.demo.dtos.PrestadorDTO;
-import com.example.demo.dtos.TecnicoDTO;
-//import com.example.demo.repositories.PessoaRepository;
-//import com.example.demo.repositories.TecnicoRepository;
 //import com.example.demo.services.exceptions.DataIntegratyViolationException;
 import com.example.demo.services.exceptions.ObjectNotFoundException;
 
 
 @Service
-public class TecnicoService {
+public class PrestadorService {
 
-	Logger log = LoggerFactory.getLogger(TecnicoService.class);
+	Logger log = LoggerFactory.getLogger(PrestadorService.class);
 
 	@Autowired
-	private TecnicoRepository repository;
+	private PrestadorRepository repository;
 
 	@Autowired
 	private PessoaRepository pessoaRepository;

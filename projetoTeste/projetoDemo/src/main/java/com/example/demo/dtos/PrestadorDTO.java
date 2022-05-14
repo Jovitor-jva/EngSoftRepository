@@ -26,6 +26,8 @@ public class PrestadorDTO implements Serializable {
 	@CPF
 	private String cpf;
 
+	private String telefone;
+
 	private Set<Integer> perfis = new HashSet<>();
 	private List<OrdemServico> osList = new ArrayList<>();
 
@@ -80,6 +82,18 @@ public class PrestadorDTO implements Serializable {
 
 	public void setOsList(List<OrdemServico> osList) {
 		this.osList = osList;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public void setPerfis(Set<Integer> perfis) {
+		this.perfis = perfis;
 	}
 
 }
