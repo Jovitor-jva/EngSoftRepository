@@ -8,7 +8,7 @@
 		<version>2.3.9.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.projeto</groupId>
+	<groupId>com.valdir</groupId>
 	<artifactId>os</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>os</name>
