@@ -11,3 +11,5 @@ Link do sistema de gerenciamento do projeto (Trello): https://trello.com/b/fJ81B
   
   
   Link para os slides: https://docs.google.com/presentation/d/1addTANDL20dv82LNYnQa-vuYcvsTEPYW/edit?usp=sharing&ouid=115716142385646691843&rtpof=true&sd=true
+  
+  Link do possível frontEnd : https://github.com/luk-z0/frontos
