@@ -10,6 +10,5 @@ https://serviceordersystem.herokuapp.com/
 Link do sistema de gerenciamento do projeto (Trello): https://trello.com/b/fJ81BMH3/ordemdeserviço
   
   
-  Link para os slides: https://docs.google.com/presentation/d/1addTANDL20dv82LNYnQa-vuYcvsTEPYW/edit?usp=sharing&ouid=115716142385646691843&rtpof=true&sd=true](https://docs.google.com/presentation/d/1EjLq231NEv7muy7AOK-I0QyRYd7zY6_f/edit?usp=sharing&ouid=115716142385646691843&rtpof=true&sd=true)
-  ](https://docs.google.com/presentation/d/1oIhVSsV5ccjN9RZ-tnQrt6H6yOz9hwZL/edit?usp=sharing&ouid=109747935285322622032&rtpof=true&sd=true)
+  Link para os slides: https://docs.google.com/presentation/d/1oIhVSsV5ccjN9RZ-tnQrt6H6yOz9hwZL/edit?usp=sharing&ouid=109747935285322622032&rtpof=true&sd=true
   Link do possível frontEnd : https://github.com/luk-z0/frontos
